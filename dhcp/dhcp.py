@@ -55,7 +55,7 @@ class WriteBootProtocolPacket(object):
                 setattr(self, option_name, getattr(configuration, option_name))
 
     def to_bytes(self):
-        result = bytearray(236)
+        '''result = bytearray(236)
         
         result[0] = self.message_type
         result[1] = self.hardware_type
@@ -74,16 +74,35 @@ class WriteBootProtocolPacket(object):
 
         result[28:28 + self.hardware_address_length] = macpack(self.client_mac_address)
         
-        result += inet_aton(self.magic_cookie)
-
+        result += inet_aton(self.magic_cookie)'''
+        form = {
+            "op": ("1B", self.message_type),
+            "htype": ("1B", self.hardware_type),
+            "hlen": ("1B", self.hardware_address_length),
+            "hops": ("1B", self.hops),
+            "xid": ("4B", self.transaction_id),
+            "secs": ("2B", self.seconds_elapsed),
+            "flags": ("2B", self.bootp_flags),
+            "ciaddr": ("4B", inet_aton(self.client_ip_address)),
+            "yiaddr": ("4B", inet_aton(self.your_ip_address)),
+            "siaddr": ("4B", inet_aton(self.next_server_ip_address)),
+            "giaddr": ("4B", inet_aton(self.relay_agent_ip_address)),
+            "chaddr": (str(self.hardware_address_length) + "B", macpack(self.client_mac_address)),
+            "cookie": ("4B", inet_aton(self.magic_cookie))
+        }
         for option in self.options:
             value = self.get_option(option)
+            opt = {
+                "option_"+str(option): (str(len(value)) + "B", value)
+            }
             # print(option, value)
             if value is None:
                 continue
-            result += bytes([option, len(value)]) + value
-        result += bytes([255])
-        return bytes(result)
+            # result += bytes([option, len(value)]) + value
+            form.update(opt)
+        # result += bytes([255])
+        form.update({"term": ("1B", 255)})
+        return serializeme.Serialize(form).packetize()
 
     def get_option(self, option):
         if option < len(options) and hasattr(self, options[option][0]):
@@ -171,6 +190,9 @@ class Transaction(object):
 
     def receive(self, packet):
         # packet from client <-> packet.message_type == 1
+        pkt = serializeme.Deserialize(packet, {
+
+        })
         if packet.message_type == 1 and packet.dhcp_message_type == 'DHCPDISCOVER':
             self.do_after(self.configuration.dhcp_offer_after_seconds,
                           self.received_dhcp_discover, (packet,), )
