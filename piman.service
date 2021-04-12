@@ -1,0 +1,10 @@
+[Unit]
+Description=Pi Manager
+
+[Service]
+WorkingDirectory=/usr/local/piman
+ExecStart=/usr/local/piman/piman.sh
+Restart=always
+
+[Install]
+WantedBy=default.target

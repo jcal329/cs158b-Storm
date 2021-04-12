@@ -1,0 +1,1 @@
+ip=dhcp root=/dev/initrd master=MASTER
