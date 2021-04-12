@@ -645,7 +645,7 @@ def construct_packet(inter, dmac, sip, dip, bootp):
 
 #           |V IHL     | TOS     | TOTLEN     | ID           |  F OFF | TTL + PR | 
 # IP    = b'\x45       \x00      \x00\x00     \x00\x00       \x40\x00 \x40\x11  \   x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
-    ip_pack = serializeme.serialize({
+    ip_pack = serializeme.Serialize({
         'ttl': (8,64),
         'protocol': (4,17),
         'checksum': ('2B', IP_checksum(ip_header.packetize())),
