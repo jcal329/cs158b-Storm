@@ -190,9 +190,7 @@ class Transaction(object):
 
     def receive(self, packet):
         # packet from client <-> packet.message_type == 1
-        pkt = serializeme.Deserialize(packet, {
 
-        })
         if packet.message_type == 1 and packet.dhcp_message_type == 'DHCPDISCOVER':
             self.do_after(self.configuration.dhcp_offer_after_seconds,
                           self.received_dhcp_discover, (packet,), )
