@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/usr/local/piman/monitoring
-ExecStart=/usr/local/piman/monitoring/grafana.sh
+WorkingDirectory=/usr/local/fresno/monitoring
+ExecStart=/usr/local/fresno/monitoring/grafana.sh
 Restart=on-failure
 RestartSec=15
 User=root

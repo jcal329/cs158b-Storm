@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/usr/bin/seattle/monitoring
-ExecStart=/usr/bin/seattle/monitoring/monitoring_piman.sh
+WorkingDirectory=/usr/local/fresno/monitoring
+ExecStart=/usr/local/fresno/monitoring/monitoring_piman.sh
 Restart=always
 RestartSec=15
 User=root
