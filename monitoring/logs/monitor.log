@@ -448,3 +448,507 @@ Thu Apr 15 18:51:44 2021 - ---- From 172.16.6.16 ----
  # of PIDs: 83 
  Temperature: 60.686 F 
  
+Thu Apr 15 18:56:45 2021 - Sending HTTP-GET to pi@172.16.6.18 
+Thu Apr 15 18:56:45 2021 - ---- From 172.16.6.18 ---- 
+ Time: Thu Apr 15 18:56:45 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 80 
+ Temperature: 48.686 F 
+ 
+Thu Apr 15 18:56:46 2021 - Sending HTTP-GET to pi@172.16.6.12 
+Thu Apr 15 18:56:46 2021 - ---- From 172.16.6.12 ---- 
+ Time: Thu Apr 15 18:56:46 2021 
+ CPU load: 0.0 
+ RAM usage: 4.4 
+ Disk usage: 5.0 
+ # of PIDs: 80 
+ Temperature: 60.861 F 
+ 
+Thu Apr 15 18:56:47 2021 - Sending HTTP-GET to pi@172.16.6.13 
+Thu Apr 15 18:56:47 2021 - ---- From 172.16.6.13 ---- 
+ Time: Fri Apr 16 02:56:47 2021 
+ CPU load: 0.0 
+ RAM usage: 7.3 
+ Disk usage: 5.4 
+ # of PIDs: 83 
+ Temperature: 60.861 F 
+ 
+Thu Apr 15 18:56:48 2021 - Sending HTTP-GET to pi@172.16.6.19 
+Thu Apr 15 18:56:48 2021 - ---- From 172.16.6.19 ---- 
+ Time: Fri Apr 16 02:56:48 2021 
+ CPU load: 0.0 
+ RAM usage: 3.9 
+ Disk usage: 5.4 
+ # of PIDs: 83 
+ Temperature: 57.939 F 
+ 
+Thu Apr 15 18:56:49 2021 - Sending HTTP-GET to pi@172.16.6.14 
+Thu Apr 15 18:56:49 2021 - ---- From 172.16.6.14 ---- 
+ Time: Thu Apr 15 18:56:49 2021 
+ CPU load: 0.0 
+ RAM usage: 10.7 
+ Disk usage: 5.1 
+ # of PIDs: 82 
+ Temperature: 62.3 F 
+ 
+Thu Apr 15 18:56:50 2021 - Sending HTTP-GET to pi@172.16.6.11 
+Thu Apr 15 18:56:50 2021 - ---- From 172.16.6.11 ---- 
+ Time: Thu Apr 15 18:56:50 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 82 
+ Temperature: 60.374 F 
+ 
+Thu Apr 15 18:56:51 2021 - Sending HTTP-GET to pi@172.16.6.17 
+Thu Apr 15 18:56:51 2021 - ---- From 172.16.6.17 ---- 
+ Time: Fri Apr 16 02:56:51 2021 
+ CPU load: 0.0 
+ RAM usage: 5.8 
+ Disk usage: 5.3 
+ # of PIDs: 83 
+ Temperature: 63.296 F 
+ 
+Thu Apr 15 18:56:52 2021 - Sending HTTP-GET to pi@172.16.6.15 
+Thu Apr 15 18:56:52 2021 - ---- From 172.16.6.15 ---- 
+ Time: Fri Apr 16 02:56:52 2021 
+ CPU load: 0.0 
+ RAM usage: 14.1 
+ Disk usage: 5.4 
+ # of PIDs: 85 
+ Temperature: 59.61 F 
+ 
+Thu Apr 15 18:56:53 2021 - Sending HTTP-GET to pi@172.16.6.20 
+Thu Apr 15 18:56:53 2021 - ---- From 172.16.6.20 ---- 
+ Time: Thu Apr 15 18:56:54 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 80 
+ Temperature: 55.504 F 
+ 
+Thu Apr 15 18:56:54 2021 - Sending HTTP-GET to pi@172.16.6.16 
+Thu Apr 15 18:56:54 2021 - ---- From 172.16.6.16 ---- 
+ Time: Fri Apr 16 02:56:54 2021 
+ CPU load: 0.0 
+ RAM usage: 14.0 
+ Disk usage: 5.5 
+ # of PIDs: 84 
+ Temperature: 61.224 F 
+ 
+Thu Apr 15 19:01:56 2021 - Sending HTTP-GET to pi@172.16.6.18 
+Thu Apr 15 19:01:56 2021 - ---- From 172.16.6.18 ---- 
+ Time: Thu Apr 15 19:01:56 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 80 
+ Temperature: 46.251 F 
+ 
+Thu Apr 15 19:01:57 2021 - Sending HTTP-GET to pi@172.16.6.12 
+Thu Apr 15 19:01:57 2021 - ---- From 172.16.6.12 ---- 
+ Time: Thu Apr 15 19:01:57 2021 
+ CPU load: 0.0 
+ RAM usage: 4.4 
+ Disk usage: 5.0 
+ # of PIDs: 80 
+ Temperature: 57.939 F 
+ 
+Thu Apr 15 19:01:58 2021 - Sending HTTP-GET to pi@172.16.6.13 
+Thu Apr 15 19:01:58 2021 - ---- From 172.16.6.13 ---- 
+ Time: Fri Apr 16 03:01:58 2021 
+ CPU load: 0.0 
+ RAM usage: 7.3 
+ Disk usage: 5.4 
+ # of PIDs: 83 
+ Temperature: 59.887 F 
+ 
+Thu Apr 15 19:01:59 2021 - Sending HTTP-GET to pi@172.16.6.19 
+Thu Apr 15 19:01:59 2021 - ---- From 172.16.6.19 ---- 
+ Time: Fri Apr 16 03:01:59 2021 
+ CPU load: 0.0 
+ RAM usage: 3.9 
+ Disk usage: 5.4 
+ # of PIDs: 83 
+ Temperature: 56.478 F 
+ 
+Thu Apr 15 19:02:00 2021 - Sending HTTP-GET to pi@172.16.6.14 
+Thu Apr 15 19:02:00 2021 - ---- From 172.16.6.14 ---- 
+ Time: Thu Apr 15 19:02:00 2021 
+ CPU load: 0.0 
+ RAM usage: 10.6 
+ Disk usage: 5.1 
+ # of PIDs: 82 
+ Temperature: 60.686 F 
+ 
+Thu Apr 15 19:02:01 2021 - Sending HTTP-GET to pi@172.16.6.11 
+Thu Apr 15 19:02:01 2021 - ---- From 172.16.6.11 ---- 
+ Time: Thu Apr 15 19:02:01 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 83 
+ Temperature: 59.887 F 
+ 
+Thu Apr 15 19:02:02 2021 - Sending HTTP-GET to pi@172.16.6.17 
+Thu Apr 15 19:02:02 2021 - ---- From 172.16.6.17 ---- 
+ Time: Fri Apr 16 03:02:02 2021 
+ CPU load: 0.0 
+ RAM usage: 5.8 
+ Disk usage: 5.3 
+ # of PIDs: 84 
+ Temperature: 62.322 F 
+ 
+Thu Apr 15 19:02:03 2021 - Sending HTTP-GET to pi@172.16.6.15 
+Thu Apr 15 19:02:03 2021 - ---- From 172.16.6.15 ---- 
+ Time: Fri Apr 16 03:02:03 2021 
+ CPU load: 0.0 
+ RAM usage: 14.1 
+ Disk usage: 5.4 
+ # of PIDs: 84 
+ Temperature: 59.072 F 
+ 
+Thu Apr 15 19:02:04 2021 - Sending HTTP-GET to pi@172.16.6.20 
+Thu Apr 15 19:02:04 2021 - ---- From 172.16.6.20 ---- 
+ Time: Thu Apr 15 19:02:04 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 80 
+ Temperature: 55.017 F 
+ 
+Thu Apr 15 19:02:05 2021 - Sending HTTP-GET to pi@172.16.6.16 
+Thu Apr 15 19:02:05 2021 - ---- From 172.16.6.16 ---- 
+ Time: Fri Apr 16 03:02:05 2021 
+ CPU load: 0.0 
+ RAM usage: 14.0 
+ Disk usage: 5.5 
+ # of PIDs: 83 
+ Temperature: 60.148 F 
+ 
+Thu Apr 15 19:07:06 2021 - Sending HTTP-GET to pi@172.16.6.18 
+Thu Apr 15 19:07:06 2021 - ---- From 172.16.6.18 ---- 
+ Time: Thu Apr 15 19:07:06 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 80 
+ Temperature: 46.251 F 
+ 
+Thu Apr 15 19:07:07 2021 - Sending HTTP-GET to pi@172.16.6.12 
+Thu Apr 15 19:07:07 2021 - ---- From 172.16.6.12 ---- 
+ Time: Thu Apr 15 19:07:07 2021 
+ CPU load: 0.0 
+ RAM usage: 4.4 
+ Disk usage: 5.0 
+ # of PIDs: 80 
+ Temperature: 59.4 F 
+ 
+Thu Apr 15 19:07:08 2021 - Sending HTTP-GET to pi@172.16.6.13 
+Thu Apr 15 19:07:08 2021 - ---- From 172.16.6.13 ---- 
+ Time: Fri Apr 16 03:07:08 2021 
+ CPU load: 0.0 
+ RAM usage: 7.3 
+ Disk usage: 5.4 
+ # of PIDs: 83 
+ Temperature: 59.4 F 
+ 
+Thu Apr 15 19:07:09 2021 - Sending HTTP-GET to pi@172.16.6.19 
+Thu Apr 15 19:07:09 2021 - ---- From 172.16.6.19 ---- 
+ Time: Fri Apr 16 03:07:09 2021 
+ CPU load: 0.0 
+ RAM usage: 3.9 
+ Disk usage: 5.4 
+ # of PIDs: 83 
+ Temperature: 55.991 F 
+ 
+Thu Apr 15 19:07:10 2021 - Sending HTTP-GET to pi@172.16.6.14 
+Thu Apr 15 19:07:10 2021 - ---- From 172.16.6.14 ---- 
+ Time: Thu Apr 15 19:07:10 2021 
+ CPU load: 0.0 
+ RAM usage: 10.7 
+ Disk usage: 5.1 
+ # of PIDs: 83 
+ Temperature: 60.148 F 
+ 
+Thu Apr 15 19:07:11 2021 - Sending HTTP-GET to pi@172.16.6.11 
+Thu Apr 15 19:07:11 2021 - ---- From 172.16.6.11 ---- 
+ Time: Thu Apr 15 19:07:11 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 82 
+ Temperature: 58.426 F 
+ 
+Thu Apr 15 19:07:12 2021 - Sending HTTP-GET to pi@172.16.6.17 
+Thu Apr 15 19:07:12 2021 - ---- From 172.16.6.17 ---- 
+ Time: Fri Apr 16 03:07:12 2021 
+ CPU load: 0.0 
+ RAM usage: 5.8 
+ Disk usage: 5.3 
+ # of PIDs: 83 
+ Temperature: 61.348 F 
+ 
+Thu Apr 15 19:07:13 2021 - Sending HTTP-GET to pi@172.16.6.15 
+Thu Apr 15 19:07:13 2021 - ---- From 172.16.6.15 ---- 
+ Time: Fri Apr 16 03:07:13 2021 
+ CPU load: 0.0 
+ RAM usage: 14.0 
+ Disk usage: 5.4 
+ # of PIDs: 85 
+ Temperature: 57.996 F 
+ 
+Thu Apr 15 19:07:14 2021 - Sending HTTP-GET to pi@172.16.6.20 
+Thu Apr 15 19:07:14 2021 - ---- From 172.16.6.20 ---- 
+ Time: Thu Apr 15 19:07:14 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 80 
+ Temperature: 53.556 F 
+ 
+Thu Apr 15 19:07:15 2021 - Sending HTTP-GET to pi@172.16.6.16 
+Thu Apr 15 19:07:15 2021 - ---- From 172.16.6.16 ---- 
+ Time: Fri Apr 16 03:07:15 2021 
+ CPU load: 0.0 
+ RAM usage: 14.0 
+ Disk usage: 5.5 
+ # of PIDs: 84 
+ Temperature: 59.61 F 
+ 
+Thu Apr 15 19:12:16 2021 - Sending HTTP-GET to pi@172.16.6.18 
+Thu Apr 15 19:12:16 2021 - ---- From 172.16.6.18 ---- 
+ Time: Thu Apr 15 19:12:16 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 80 
+ Temperature: 47.225 F 
+ 
+Thu Apr 15 19:12:17 2021 - Sending HTTP-GET to pi@172.16.6.12 
+Thu Apr 15 19:12:17 2021 - ---- From 172.16.6.12 ---- 
+ Time: Thu Apr 15 19:12:17 2021 
+ CPU load: 0.0 
+ RAM usage: 4.4 
+ Disk usage: 5.0 
+ # of PIDs: 81 
+ Temperature: 58.913 F 
+ 
+Thu Apr 15 19:12:18 2021 - Sending HTTP-GET to pi@172.16.6.13 
+Thu Apr 15 19:12:18 2021 - ---- From 172.16.6.13 ---- 
+ Time: Fri Apr 16 03:12:18 2021 
+ CPU load: 0.0 
+ RAM usage: 7.3 
+ Disk usage: 5.4 
+ # of PIDs: 83 
+ Temperature: 59.887 F 
+ 
+Thu Apr 15 19:12:19 2021 - Sending HTTP-GET to pi@172.16.6.19 
+Thu Apr 15 19:12:19 2021 - ---- From 172.16.6.19 ---- 
+ Time: Fri Apr 16 03:12:19 2021 
+ CPU load: 0.0 
+ RAM usage: 3.9 
+ Disk usage: 5.4 
+ # of PIDs: 82 
+ Temperature: 56.478 F 
+ 
+Thu Apr 15 19:12:20 2021 - Sending HTTP-GET to pi@172.16.6.14 
+Thu Apr 15 19:12:20 2021 - ---- From 172.16.6.14 ---- 
+ Time: Thu Apr 15 19:12:20 2021 
+ CPU load: 0.0 
+ RAM usage: 10.6 
+ Disk usage: 5.1 
+ # of PIDs: 83 
+ Temperature: 60.148 F 
+ 
+Thu Apr 15 19:12:21 2021 - Sending HTTP-GET to pi@172.16.6.11 
+Thu Apr 15 19:12:21 2021 - ---- From 172.16.6.11 ---- 
+ Time: Thu Apr 15 19:12:21 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 83 
+ Temperature: 57.939 F 
+ 
+Thu Apr 15 19:12:22 2021 - Sending HTTP-GET to pi@172.16.6.17 
+Thu Apr 15 19:12:22 2021 - ---- From 172.16.6.17 ---- 
+ Time: Fri Apr 16 03:12:22 2021 
+ CPU load: 0.0 
+ RAM usage: 5.8 
+ Disk usage: 5.3 
+ # of PIDs: 84 
+ Temperature: 62.322 F 
+ 
+Thu Apr 15 19:12:23 2021 - Sending HTTP-GET to pi@172.16.6.15 
+Thu Apr 15 19:12:23 2021 - ---- From 172.16.6.15 ---- 
+ Time: Fri Apr 16 03:12:23 2021 
+ CPU load: 0.0 
+ RAM usage: 14.0 
+ Disk usage: 5.4 
+ # of PIDs: 84 
+ Temperature: 57.996 F 
+ 
+Thu Apr 15 19:12:24 2021 - Sending HTTP-GET to pi@172.16.6.20 
+Thu Apr 15 19:12:24 2021 - ---- From 172.16.6.20 ---- 
+ Time: Thu Apr 15 19:12:24 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 81 
+ Temperature: 54.53 F 
+ 
+Thu Apr 15 19:12:25 2021 - Sending HTTP-GET to pi@172.16.6.16 
+Thu Apr 15 19:12:25 2021 - ---- From 172.16.6.16 ---- 
+ Time: Fri Apr 16 03:12:25 2021 
+ CPU load: 0.0 
+ RAM usage: 14.0 
+ Disk usage: 5.5 
+ # of PIDs: 84 
+ Temperature: 59.61 F 
+ 
+Thu Apr 15 19:17:26 2021 - Sending HTTP-GET to pi@172.16.6.18 
+Thu Apr 15 19:17:26 2021 - ---- From 172.16.6.18 ---- 
+ Time: Thu Apr 15 19:17:26 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 80 
+ Temperature: 47.712 F 
+ 
+Thu Apr 15 19:17:27 2021 - Sending HTTP-GET to pi@172.16.6.12 
+Thu Apr 15 19:17:27 2021 - ---- From 172.16.6.12 ---- 
+ Time: Thu Apr 15 19:17:27 2021 
+ CPU load: 0.0 
+ RAM usage: 4.4 
+ Disk usage: 5.0 
+ # of PIDs: 80 
+ Temperature: 59.4 F 
+ 
+Thu Apr 15 19:17:28 2021 - Sending HTTP-GET to pi@172.16.6.13 
+Thu Apr 15 19:17:28 2021 - ---- From 172.16.6.13 ---- 
+ Time: Fri Apr 16 03:17:28 2021 
+ CPU load: 0.0 
+ RAM usage: 7.3 
+ Disk usage: 5.4 
+ # of PIDs: 83 
+ Temperature: 60.374 F 
+ 
+Thu Apr 15 19:17:29 2021 - Sending HTTP-GET to pi@172.16.6.19 
+Thu Apr 15 19:17:29 2021 - ---- From 172.16.6.19 ---- 
+ Time: Fri Apr 16 03:17:29 2021 
+ CPU load: 0.0 
+ RAM usage: 3.9 
+ Disk usage: 5.4 
+ # of PIDs: 83 
+ Temperature: 55.991 F 
+ 
+Thu Apr 15 19:17:30 2021 - Sending HTTP-GET to pi@172.16.6.14 
+Thu Apr 15 19:17:30 2021 - ---- From 172.16.6.14 ---- 
+ Time: Thu Apr 15 19:17:30 2021 
+ CPU load: 0.0 
+ RAM usage: 10.6 
+ Disk usage: 5.1 
+ # of PIDs: 82 
+ Temperature: 61.224 F 
+ 
+Thu Apr 15 19:17:31 2021 - Sending HTTP-GET to pi@172.16.6.11 
+Thu Apr 15 19:17:31 2021 - ---- From 172.16.6.11 ---- 
+ Time: Thu Apr 15 19:17:31 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 83 
+ Temperature: 58.426 F 
+ 
+Thu Apr 15 19:17:32 2021 - Sending HTTP-GET to pi@172.16.6.17 
+Thu Apr 15 19:17:32 2021 - ---- From 172.16.6.17 ---- 
+ Time: Fri Apr 16 03:17:32 2021 
+ CPU load: 0.0 
+ RAM usage: 5.8 
+ Disk usage: 5.3 
+ # of PIDs: 83 
+ Temperature: 61.348 F 
+ 
+Thu Apr 15 19:17:33 2021 - Sending HTTP-GET to pi@172.16.6.15 
+Thu Apr 15 19:17:33 2021 - ---- From 172.16.6.15 ---- 
+ Time: Fri Apr 16 03:17:33 2021 
+ CPU load: 0.0 
+ RAM usage: 14.0 
+ Disk usage: 5.4 
+ # of PIDs: 85 
+ Temperature: 57.996 F 
+ 
+Thu Apr 15 19:17:34 2021 - Sending HTTP-GET to pi@172.16.6.20 
+Thu Apr 15 19:17:34 2021 - ---- From 172.16.6.20 ---- 
+ Time: Thu Apr 15 19:17:34 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 80 
+ Temperature: 54.043 F 
+ 
+Thu Apr 15 19:17:35 2021 - Sending HTTP-GET to pi@172.16.6.16 
+Thu Apr 15 19:17:35 2021 - ---- From 172.16.6.16 ---- 
+ Time: Fri Apr 16 03:17:35 2021 
+ CPU load: 0.0 
+ RAM usage: 14.0 
+ Disk usage: 5.5 
+ # of PIDs: 84 
+ Temperature: 60.148 F 
+ 
+Thu Apr 15 19:22:36 2021 - Sending HTTP-GET to pi@172.16.6.18 
+Thu Apr 15 19:22:36 2021 - ---- From 172.16.6.18 ---- 
+ Time: Thu Apr 15 19:22:36 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 80 
+ Temperature: 46.251 F 
+ 
+Thu Apr 15 19:22:37 2021 - Sending HTTP-GET to pi@172.16.6.12 
+Thu Apr 15 19:22:37 2021 - ---- From 172.16.6.12 ---- 
+ Time: Thu Apr 15 19:22:37 2021 
+ CPU load: 0.0 
+ RAM usage: 4.4 
+ Disk usage: 5.0 
+ # of PIDs: 80 
+ Temperature: 59.4 F 
+ 
+Thu Apr 15 19:22:38 2021 - Sending HTTP-GET to pi@172.16.6.13 
+Thu Apr 15 19:22:38 2021 - ---- From 172.16.6.13 ---- 
+ Time: Fri Apr 16 03:22:39 2021 
+ CPU load: 0.0 
+ RAM usage: 7.3 
+ Disk usage: 5.4 
+ # of PIDs: 83 
+ Temperature: 60.374 F 
+ 
+Thu Apr 15 19:22:39 2021 - Sending HTTP-GET to pi@172.16.6.19 
+Thu Apr 15 19:22:39 2021 - ---- From 172.16.6.19 ---- 
+ Time: Fri Apr 16 03:22:39 2021 
+ CPU load: 0.0 
+ RAM usage: 3.9 
+ Disk usage: 5.4 
+ # of PIDs: 82 
+ Temperature: 56.478 F 
+ 
+Thu Apr 15 19:22:40 2021 - Sending HTTP-GET to pi@172.16.6.14 
+Thu Apr 15 19:22:41 2021 - ---- From 172.16.6.14 ---- 
+ Time: Thu Apr 15 19:22:41 2021 
+ CPU load: 0.0 
+ RAM usage: 10.6 
+ Disk usage: 5.1 
+ # of PIDs: 82 
+ Temperature: 60.686 F 
+ 
+Thu Apr 15 19:22:42 2021 - Sending HTTP-GET to pi@172.16.6.11 
+Thu Apr 15 19:22:42 2021 - ---- From 172.16.6.11 ---- 
+ Time: Thu Apr 15 19:22:42 2021 
+ CPU load: 0.0 
+ RAM usage: 3.7 
+ Disk usage: 4.9 
+ # of PIDs: 83 
+ Temperature: 58.426 F 
+ 
