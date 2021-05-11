@@ -12,6 +12,7 @@
 # dig SRV metrics.athens.cs158b to test
 
 import socket
+import serializeme
 from serializeme import Deserialize, Serialize
 import threading
 import re
@@ -20,7 +21,48 @@ DNS_IP = "127.0.0.1"
 GOOGLE_DNS = "8.8.8.8"
 DNS_PORT = 53
 DOMAIN_NAME = "fresno.cs158b"
+DNS_REQ = {
+    "id": "2B",
+    "qr": "1b",
+    "opcode": "4b",
+    "aa": "1b",
+    "tc": "1b",
+    "rd": "1b",
+    "ra": "1b",
+    "z": "3b",
+    "rcode": "4b",
+    "qdcount": "2B",
+    "ancount": "2B",
+    "nscount": "2B",
+    "arcount": "2B",
+    "qname": serializeme.PREFIX_LEN_NULL_TERM,
+    "qtype": "2B",
+    "qclass": "2B"
+}
 
+DNS_RR = {
+    'pid': ('2B'),
+    'pflags': ('2B'),
+    'qcnt': ('2B'),
+    'acnt': ('2B', '', 'ANSWERS'),
+    'ncnt': ('2B'),
+    'mcnt': ('2B'),
+    'qname': (serializeme.NULL_TERMINATE, serializeme.HOST),
+    'qtype': ('2B'),
+    'qclass': ('2B'),
+    'ANSWERS': {
+        'name': ('2B'),
+        'type': ('2B'),
+        'class': ('2B'),
+        'ttl': ('4B'),
+        'data_length': ('2B'),
+        'address': ('4B', serializeme.IPv4)
+    }
+}
+
+SRV_RR = {
+
+}
 
 class DNS_PI(object):
 
@@ -50,6 +92,8 @@ class DNS_PI(object):
         resData, resAddr = remote.recvfrom(1024)
         self.pi_dns.sendto(resData, addr)
 
+    def handle_srv(self, pkt, addr, remote_addr, remote_port):
+        # handle dns type 33 requests
 
 if __name__ == "__main__":
     dns = DNS_PI("hosts.csv", DNS_IP, GOOGLE_DNS, DNS_PORT)
