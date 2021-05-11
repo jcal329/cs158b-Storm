@@ -60,9 +60,7 @@ DNS_RR = {
     }
 }
 
-SRV_RR = {
 
-}
 
 class DNS_PI(object):
 
@@ -86,14 +84,27 @@ class DNS_PI(object):
 
     def __handle_request(self, pkt, addr, remote_addr, remote_port):
         # forward pkt to remote dns server and relay back response to addr
+        dns_pkt = Deserialize(pkt, DNS_REQ)
+        req_type = dns_pkt.get_field("qtype")
+        qname = dns_pkt.get_field("qname")
+        # check query type, if srv run handle_srv()
+
+        if req_type == 33:
+            self.handle_srv(dns_pkt)
+        elif req_type == 1:
+            # if IP request, check against IPs in host.csv and return pXX.fresno.cs158b if it exists
+            # otherwise pass to google server
+
         remote = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         remote.connect((remote_addr, remote_port))
         remote.send(pkt)
         resData, resAddr = remote.recvfrom(1024)
         self.pi_dns.sendto(resData, addr)
 
-    def handle_srv(self, pkt, addr, remote_addr, remote_port):
+    def handle_srv(self, deserialized):
         # handle dns type 33 requests
+        target = deserialized.get_field("qname")
+        if target != "metrics.fresno.cs158b":
 
 if __name__ == "__main__":
     dns = DNS_PI("hosts.csv", DNS_IP, GOOGLE_DNS, DNS_PORT)
