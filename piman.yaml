@@ -4,3 +4,5 @@ subnet_mask: 255.255.255.0
 interface: usb-pi
 switch_count: 0
 switches:
+dns_servers: 8.8.8.8
+dns_domain: fresno.cs158b

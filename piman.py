@@ -34,7 +34,7 @@ from utility import mac_mapper
 from piman import logger
 from parse_config import config
 import ntpserver
-
+from dns import dns
 '''
 piman.py
 
@@ -98,10 +98,14 @@ def server():
     ntp_thread = Thread(target=ntpserver.do_ntp())
     ntp_thread.start()
 
+    dns_thread = Thread(target=dns.start())
+    dns_thread.start()
+
     signal.pthread_kill(config_ui_thread.ident, 15) # 15 = sigterm
     signal.pthread_kill(tftp_thread.ident, 15)
     signal.pthread_kill(dhcp_thread.ident, 15)
     signal.pthread_kill(tcp_thread.ident, 15)
+    signal.pthread_kill(dns_thread, 15)
     # ntp_thread does not need to be killed. ntpserver takes control of the terminal
     # when it is run, so after it is closed by a keyboard interrupt, the above
     # lines run closing the rest of the threads. ntp_thread will already be stopped
