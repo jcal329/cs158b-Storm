@@ -1,0 +1,15 @@
+[Unit]
+Description=Raspberry Pi Monitoring with Prometheus
+After=network.target
+
+[Service]
+User=root
+Group=sudo
+Type=simple
+WorkingDirectory=/home/cs158b/fresno/monitoring/prometheus-2.27.0.linux-amd64
+ExecStart=/home/cs158b/fresno/monitoring/prometheus-2.27.0.linux-amd64/prometheus
+Restart=on-failure
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target
