@@ -617,23 +617,23 @@ def construct_packet(inter, dmac, sip, dip, bootp):
 
     # BOOTP Payload
     bootp = bootp.to_bytes()
-    # udp   = bytearray(UDP)
-    # ip    = bytearray(IP)
-    # ether = bytearray(ETHER)
+    udp   = bytearray(UDP)
+    ip    = bytearray(IP)
+    ether = bytearray(ETHER)
 
-    udp_pack = serializeme.Serialize({
+    '''udp_pack = serializeme.Serialize({
         'source': ('2B', sip),
         'destination': ('2B', dip),
         'length': ('2B', len(bootp) + 8),
         'checksum': ('2B', udp_checksum(sip, dip, bootp))
-    })
+    })'''
 
     # # UDP Packet
-    # udp_length = len(bootp) + 8
-    # udp[4:6] = (udp_length).to_bytes(2, 'big')
-    # udp[6:8] = udp_checksum(sip, dip, bootp)
+    udp_length = len(bootp) + 8
+    udp[4:6] = (udp_length).to_bytes(2, 'big')
+    udp[6:8] = udp_checksum(sip, dip, bootp)
 
-    ip_header = serializeme.Serialize({
+    '''ip_header = serializeme.Serialize({
         'version': ('4b', 4),
         'IHL'    : (4, 5),
         'tos'    : (8,0),
@@ -641,40 +641,45 @@ def construct_packet(inter, dmac, sip, dip, bootp):
         'identification': ('2B', (randrange(0, 65535)).to_bytes(2, 'big')),
         'flags': (3, 2),
         'fragment_offset': 13
-    })
+    })'''
 
 #           |V IHL     | TOS     | TOTLEN     | ID           |  F OFF | TTL + PR | 
-# IP    = b'\x45       \x00      \x00\x00     \x00\x00       \x40\x00 \x40\x11  \   x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
-    ip_pack = serializeme.Serialize({
+#    IP = b'\x45         \x00      \x00\x00     \x00\x00       \x40\x00 \x40\x11   \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+    '''ip_pack = serializeme.Serialize({
         'ttl': (8,64),
         'protocol': (4,17),
         'checksum': ('2B', IP_checksum(ip_header.packetize())),
         'source': ('4B', inet_aton(sip)),
         'destination': ('4B', inet_aton(dip))
-    })
+    })'''
     # # IP Packet
     # version & IHL & type of service      ip[ 0: 2]
-    # total length                         ip[ 2: 4] = (udp_length + 20).to_bytes(2, 'big')
-    # indentification                      ip[ 4: 6] = (randrange(0, 65535)).to_bytes(2, 'big')
-    # flags+fragmentoffset                 ip[ 6:10] = we dont know ;)
-    # checksum                             ip[10:12] = IP_checksum(ip)
-    # source address                       ip[12:16] = inet_aton(sip)
-    # destination                          ip[16:20] = inet_aton(dip)
+    # total length                        
+    ip[ 2: 4] = (udp_length + 20).to_bytes(2, 'big')
+    # indentification                      
+    ip[ 4: 6] = (randrange(0, 65535)).to_bytes(2, 'big')
+    # flags+fragmentoffset                 ip[ 6:10] = ? 
+    # checksum                             
+    ip[10:12] = IP_checksum(ip)
+    # source address                       
+    ip[12:16] = inet_aton(sip)
+    # destination                          
+    ip[16:20] = inet_aton(dip)
 
     try:
         mac = open('/sys/class/net/'+inter+'/address').readline()
     except:
         print("Failed to get mac adress for ", inter)
 
-    ether_pack = serializeme.Serialize({
+    '''ether_pack = serializeme.Serialize({
         'mac_address': ('6B', macpack(dmac)),
         'destination': ('6B', macpack(mac[0:17])),
-    })
+    })'''
 
     # # Ethernet Frame
-    # ether[0: 6] = macpack(dmac)
-    # ether[6:12] = macpack(mac[0:17])
-    # packet = b''.join([bytes(ether), bytes(ip), bytes(udp), bootp])
+    ether[0: 6] = macpack(dmac)
+    ether[6:12] = macpack(mac[0:17])
+    packet = b''.join([bytes(ether), bytes(ip), bytes(udp), bootp])
 
     return ether_pack.packetize() + ip_header.packetize() + ip_pack.packetize() + udp_pack.packetize() + bootp
 

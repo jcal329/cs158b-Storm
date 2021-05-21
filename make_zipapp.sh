@@ -6,13 +6,13 @@ then
 fi
 rm -rf build
 mkdir build
-PYTHONUSERBASE=$PWD/build python3 -m pip install --ignore-installed click pysnmp Flask python-dotenv PyYAML
+PYTHONUSERBASE=$PWD/build python3 -m pip install --ignore-installed click pysnmp Flask python-dotenv PyYAML serializeme
 mkdir build/piman.app
 (
     cd build/lib/python*/site-packages
     mv $(ls | grep -v -) ../../../piman.app
 )
-cp -r logging.conf utility tftp dhcp monitoring tcp *.py build/piman.app
+cp -r logging.conf utility tftp dhcp dns monitoring tcp *.py build/piman.app
 mkdir build/piman.app/install
 mkdir build/logs
 cp piman.yaml build

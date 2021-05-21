@@ -91,15 +91,15 @@ def server():
                          mac_ip_file, subnet_mask, ip, lease_time, interface], name="dhcpd")
     dhcp_thread.start()
 
+    dns_thread = Thread(target=dns.do_dns, name="dnsd")
+    dns_thread.start()
+
     tcp_thread = Thread(target=tcp.do_tcp, args=[
                         data_dir, tcp_port, ip], name="tcp")
     tcp_thread.start()
 
     ntp_thread = Thread(target=ntpserver.do_ntp())
     ntp_thread.start()
-
-    dns_thread = Thread(target=dns.start())
-    dns_thread.start()
 
     signal.pthread_kill(config_ui_thread.ident, 15) # 15 = sigterm
     signal.pthread_kill(tftp_thread.ident, 15)
@@ -117,9 +117,10 @@ def restart(switch_address, interface, ports):
 
 
 def reinstall(switch_address, interface, port):
-    with open("reinstall.txt", "w") as f:
-        network_addr = ip[:7] + str(interface) + "." + str(port)
-        f.write(network_addr)
+    with open("reinstall.txt", "w+") as f:
+        switch_ip = switch_address.split(".")
+        pi_addr = ".".join([switch_ip[0], switch_ip[1], str(config['private_number']), str(port)])
+        f.write(pi_addr)
     power_cycle.power_cycle(switch_address, interface, port)
     
 def mapper(switch_address,interface, port, file):

@@ -337,7 +337,9 @@ class dns(object):
         })
         return rsp
 
+def do_dns():
+    server = dns("hosts.csv", DNS_IP, GOOGLE_DNS, DNS_PORT)
+    server.start()
 
 if __name__ == "__main__":
-    dns = dns("hosts.csv", DNS_IP, GOOGLE_DNS, DNS_PORT)
-    dns.start()
+    do_dns()
